@@ -9,19 +9,16 @@ def main():
 	bot.login()
 
 	pauseseconds = random.randrange(60, 90, 1)
-	os.system("copy msjww.jpg msjwwcopy.jpg")
 
 	while(True):
-		bot.upload_photo("msjwwcopy.jpg", caption="#msjww19")
+		bot.upload_photo("pics\msjww2.jpg", caption="#msjww19 maybe windows will work")
 		print("Waiting: ", pauseseconds)
 
 		time.sleep(pauseseconds)
 		pauseseconds = random.randrange(60, 90, 1)
 
-		os.system("del \\f msjwwcopy.jpg.REMOVE_ME")
-		os.system("copy msjww.jpg msjwwcopy.jpg")
-
-
+		os.system("del \\f \pics\msjww2.jpg.REMOVE_ME")
+		os.system("copy pics\msjww1.jpg pics\msjww2.jpg")
 
 if __name__ == "__main__":
 	main()
