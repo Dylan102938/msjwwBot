@@ -8,18 +8,15 @@ def main():
 	bot.login()
 
 	pauseseconds = random.randrange(60, 90, 1)
-	os.system("cp /Users/dylanfeng/Documents/msjww.jpg ./pics/msjww.jpg")
 
 	while(True):
-		bot.upload_photo("./pics/msjww.jpg", caption="#msjww19")
+		bot.upload_photo("./pics/msjww2.jpg", caption="#msjww19")
 		time.sleep(pauseseconds)
 		pauseseconds = random.randrange(60, 90, 1)
 		print("Waiting: ", pauseseconds)
 
-		os.system("rm ./pics/msjww.jpg.REMOVE_ME")
-		os.system("cp /Users/dylanfeng/Documents/msjww.jpg ./pics/msjww.jpg")
-
-
+		os.system("rm ./pics/msjww2.jpg.REMOVE_ME")
+		os.system("cp ./pics/msjww1.jpg ./pics/msjww2.jpg")
 
 if __name__ == "__main__":
 	main()
