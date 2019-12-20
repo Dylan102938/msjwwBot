@@ -8,15 +8,13 @@ def main():
 	bot = instabot.Bot()
 	bot.login()
 
-	pauseseconds = random.randrange(60, 90, 1)
+	counter = 0
 	os.system("cp msjww.jpg msjwwcopy.jpg")
 
 	while(True):
 		bot.upload_photo("msjwwcopy.jpg", caption="#msjww19")
-		print("Waiting: ", pauseseconds)
-
-		time.sleep(pauseseconds)
-		pauseseconds = random.randrange(60, 90, 1)
+		print("Number of posts: ", counter)
+		counter += 1
 
 		os.system("rm msjwwcopy.jpg.REMOVE_ME")
 		os.system("cp msjww.jpg msjwwcopy.jpg")
