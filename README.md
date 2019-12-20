@@ -21,7 +21,7 @@ https://www.python.org/ftp/python/3.7.6/python-3.7.6-macosx10.9.pkg
 cd Desktop
 ```
 
-4. Clone this repository.
+4. Clone this repository. If the below command does not work, you can manually download the zip file by pressing the top green "Clone or Download" button located in the top right corner of the page and move the unzipped folder to your Desktop.
 ```bash
 git clone https://github.com/Dylan102938/msjwwBot.git
 ```
